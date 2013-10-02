@@ -1,0 +1,21 @@
+-- Returns string of all open URLs in current window in Safari
+tell application "Safari"
+	--Variables
+	set windowCount to number of windows
+	set docText to ""
+	set bigList to ""
+	set tabURL to ""
+	--Repeat for Every Window
+	repeat with x from 1 to windowCount
+		set tabCount to count of tabs in window x
+		--Repeat for Every Tab in Current Window
+		repeat with y from 1 to tabCount
+			--Get Tab Name & URL
+			set tabName to name of tab y of window x
+			set tabURL to URL of tab y of window x
+			set docText to "[" & tabName & "](" & tabURL & ")" & linefeed as string
+			set bigList to bigList & docText
+		end repeat
+	end repeat
+end tell
+return bigList
