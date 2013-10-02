@@ -1,3 +1,5 @@
+-- Gets the URL of the current message in Mail
+
 tell application "Mail"
     set _sel to get selection
     set _links to {}

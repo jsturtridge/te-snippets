@@ -1,4 +1,6 @@
 -- Return the URL of the current tab in Safari
+-- in AppleScript
+
 tell application "Safari"
 	
 	set currentURL to URL of current tab of window 1

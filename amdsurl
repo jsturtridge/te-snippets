@@ -1,4 +1,5 @@
 -- Returns string of all open URLs in current window in Safari
+-- in AppleScript
 tell application "Safari"
 	--Variables
 	set windowCount to number of windows
