@@ -20,3 +20,7 @@ Scrapes the frontmost tab in Safari and pastes into the current document in Mark
 ## murl
 
 Gets the URL of the current message in Mail.
+
+## gcurl
+
+Scrapes the frontmost tab in Googel Chrome and pastes into the current document in Markdown format.
