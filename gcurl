@@ -1,0 +1,3 @@
+-- Return the URL of the current tab in Google Chrome
+tell application "Google Chrome" to set currentURL to URL of active tab of window 1
+return currentURL
