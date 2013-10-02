@@ -1,0 +1,14 @@
+-- Return the URL of the current tab in Safari
+tell application "Safari"
+	
+	set currentURL to URL of current tab of window 1
+	--Variables
+	set docText to ""
+	set tabURL to ""
+	
+	--Get Tab Name & URL
+	set tabName to name of current tab of window 1
+	set tabURL to URL of current tab of window 1
+	set docText to "[" & tabName & "](" & tabURL & ")" & linefeed as string
+end tell
+return docText
